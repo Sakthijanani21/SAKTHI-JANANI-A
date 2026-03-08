@@ -1,0 +1,119 @@
+You are an expert front-end developer.
+    Generate ONLY valid complete HTML5 code.
+    Include CSS inside <style> tag.
+    Make design modern, responsive and elegant.
+    Do not include explanations.
+    
+User Request: A freelance designer wants to create a professional portfolio website quickly and efficiently. The system first detects the project requirements and analyzes the designer’s style and design preferences. Based on this understanding, it generates a complete website structure that includes a visually appealing hero section with a welcoming message and a strong call-to-action to engage visitors immediately. It also builds a responsive portfolio gallery arranged in a clean grid layout to showcase projects effectively across devices. An about section is created to present the designer’s professional bio in a compelling manner, helping visitors understand their background and expertise. To strengthen credibility, the system includes a testimonials section featuring client feedback. A contact form with proper input validation ensures smooth communication while preventing errors, and finally, a professional footer is added with social media links and essential information to complete the polished look of the website. 
+
+Here is the HTML5 code structure as per your request:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Designer's Name</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+       .hero {
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+       .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+       .hero p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+       .hero.cta-button {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+       .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+       .portfolio-item {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+       .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+       .about {
+            padding: 50px 0;
+            text-align: center;
+        }
+       .about h2 {
+            font-size: 2em;
+            margin: 0 0 20px;
+        }
+       .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+       .testimonials {
+            padding: 50px 0;
+            text-align: center;
+        }
+       .testimonials h2 {
+            font-size: 2em;
+            margin: 0 0 20px;
+        }
+       .contact-form {
+            padding: 50px 0;
+            text-align: center;
+        }
+       .contact-form h2 {
+            font-size: 2em;
+            margin: 0 0 20px;
+        }
+       .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+       .footer a {
+            color: #bbb;
+            margin: 0 10px;
+        }
+        @media (max-width: 768px) {
+           .portfolio {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my creative designs and collaborate on exciting projects.</p
